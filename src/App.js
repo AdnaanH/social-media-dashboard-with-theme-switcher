@@ -1,24 +1,20 @@
-import logo from './logo.svg';
-import './App.css';
+import BottomSection from "./components/BottomSection";
+import Header from "./components/Header";
+import TopSection from "./components/TopSection";
+
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <div className='flex flex-col h-screen w-full '>
+      <div>
+        <Header />
+      </div>
+      <div className='flex-col items-center justify-center sm:items-start mt-4 sm:-mt-24'>
+        <TopSection  />
+        <BottomSection />
+      </div>
+
+    </div>  
   );
 }
 
